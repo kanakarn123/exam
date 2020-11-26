@@ -7,8 +7,8 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$A = $_POST['A'];
-$B = $_POST['B'];
+$A = $_POST['a'];
+$B = $_POST['b'];
 $sql = "INSERT INTO guestbook (A , B) VALUES ('$A', '$B')";
 
 
