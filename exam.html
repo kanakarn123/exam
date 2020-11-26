@@ -1,4 +1,19 @@
+  
 <html>
+<head>
+<title>ITF Lab</title>
+</head>
+<body>
+<?php
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'exampleple.mysql.database.azure.com', 'jaooexample@exampleple', 'Jaoo01062544', 'exampleeee', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+$res = mysqli_query($conn, 'SELECT * FROM exampleeee');
+?>
+  
     <body>
         <form action="showexample.php" method="post">
             A: <input type="text" name="A" /><br>
