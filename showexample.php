@@ -31,9 +31,9 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><center><?php echo $Result['a'];?></center></td>
-    <td><center><?php echo $Result['b'];?></center></td>
-    <td><center><?php echo $sum+$Result['b']+$Result['a'];?></center></td>
+    <td><center><?php echo $Result['A'];?></center></td>
+    <td><center><?php echo $Result['B'];?></center></td>
+    <td><center><?php echo $sum+$Result['A']+$Result['B'];?></center></td>
   </tr>
 <?php
 }
