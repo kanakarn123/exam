@@ -11,9 +11,9 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM exampleeee');
-?>
-  
+$A = $_POST['A'];
+$B = $_POST['B'];
+$sql = "INSERT INTO guestbook (Name , Type) VALUES ('$A', '$B')";?>
     <body>
         <form action="showexample.php" method="post">
             A: <input type="text" name="A" /><br>
