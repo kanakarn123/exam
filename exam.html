@@ -13,7 +13,7 @@ if (mysqli_connect_errno($conn))
 }
 $A = $_POST['A'];
 $B = $_POST['B'];
-$sql = "INSERT INTO guestbook (Name , Type) VALUES ('$A', '$B')";?>
+$sql = "INSERT INTO guestbook (A , B) VALUES ('$A', '$B')";?>
     <body>
         <form action="showexample.php" method="post">
             A: <input type="text" name="A" /><br>
