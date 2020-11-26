@@ -5,12 +5,12 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'exampleple.mysql.database.azure.com', 'jaooexample@exampleple', 'Jaoo01062544', 'guestbook', 3306);
+mysqli_real_connect($conn, 'exampleple.mysql.database.azure.com', 'jaooexample@exampleple', 'Jaoo01062544', 'exampleeee', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+$res = mysqli_query($conn, 'SELECT * FROM exampleeee');
 ?>
     
 <div class="container">
